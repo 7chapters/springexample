@@ -11,7 +11,7 @@ public class   DemoClient
 		ClassPathXmlApplicationContext  ctx = new ClassPathXmlApplicationContext("com/excel/core_01/applicationContextContainer/_01FirstApplicationContext/spring.cfg.xml");
 
 		DemoInter d1=(DemoInter)ctx.getBean("demo");
-
+		
 		DemoInterImpl d2=(DemoInterImpl)ctx.getBean("demo");
 
 		System.out.println(d2.wish("friends"));
@@ -20,10 +20,5 @@ public class   DemoClient
 		System.out.println(d2.hashCode());
 
 		ctx.close();
-
 	}
 }
-
-
-
-

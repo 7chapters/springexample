@@ -21,20 +21,19 @@ public class DemoImple implements DemoInter{
 	private int runs[];
 	
 	public String sayHello() {
-		
-		return "Hello Friends... Gmg. :) "+
-		" salary = "+salary+
-		" tb = "+tb.toString()+
-		" dt = "+dt.toString()+
-		" fruits = "+fruits.toString()+
-		" veg = "+veg.toString()+
-		" phones = "+phone_nos.toString()+
-		" emails = "+emails.toString()+
-		" perDetails = "+perDetails.toString()+
-		" capitals = "+capitals.toString()+
-		" faculties = "+faculties.toString()+
-		" courses = {"+courses[0]+" "+courses[1]+"}"+
-		" runs = {" + runs[0]+" "+runs[1]+"}";
+		return "\nHello Friends... Gmg. :) "+
+		" \n salary = "+salary+
+		" \n tb = "+tb.toString()+
+		" \n dt = "+dt.toString()+
+		" \n fruits = "+fruits.toString()+
+		" \n veg = "+veg.toString()+
+		" \n phones = "+phone_nos.toString()+
+		" \n emails = "+emails.toString()+
+		" \n perDetails = "+perDetails.toString()+
+		" \n capitals = "+capitals.toString()+
+		" \n faculties = "+faculties.toString()+
+		" \n courses = {"+courses[0]+" "+courses[1]+"}"+
+		" \n runs = {" + runs[0]+" "+runs[1]+"}";
 	}
 	
 	public void setSalary(float salary) {

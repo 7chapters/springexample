@@ -10,5 +10,4 @@
 			<value>Hello</value>
 		</constructor-arg>
       </bean>
-
 </beans>

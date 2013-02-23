@@ -6,7 +6,7 @@ public class Bean {
 	private int a;
 	private float b;
 	private String c;
-
+	
 	public Bean(){}
 	
 	

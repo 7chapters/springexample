@@ -1,21 +1,17 @@
 package com.excel.core_01.applicationContextContainer._02Prototype;
 
-public class  DemoInterImpl  implements DemoInter
+public class  DemoInterImpl  implements DemoInter {	
+	private String  message;
 
-{	private String  message;
+	public DemoInterImpl() {
+		System.out.println("Object created..............");
+	}
+	public void setMessage(String s) {
+		message=s;
+		System.out.println("setter method executed");
+	}
 
-public DemoInterImpl()
-{
-	System.out.println("Object created");
-}
-public void setMessage(String s)
-{
-	message=s;
-	System.out.println("setter method executed");
-}
-
-public String wish(String uname)
-{
-	return   message+" "+uname+" Have a great day";
-}
+	public String wish(String uname) {
+		return   message+" "+uname+" Have a great day";
+	}
 }

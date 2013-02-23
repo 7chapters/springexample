@@ -8,7 +8,7 @@ public class  DemoInterImpl  implements DemoInter
 	{
 		System.out.println("Constructor executed");
 	}
-	 public void setMessag(String s)
+	public void setMessag(String s)
 	{
 		message=s;
 	}

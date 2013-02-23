@@ -11,6 +11,12 @@
 		</constructor-arg>
 	</bean>
 	
+	<!-- <bean id = "t1" class="com.excel.core_01.iocContainer._12InstanceFactory.TestBean">
+		<constructor-arg>
+			<value>Gmg. my dear friends... :)</value>
+		</constructor-arg>
+	</bean> -->
+	
 	<bean id = "db" class = "com.excel.core_01.iocContainer._12InstanceFactory.DemoBean">			
 		<property name = "tb">
 			<ref bean = "t1"/>

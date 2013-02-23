@@ -5,14 +5,19 @@
 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 	<bean id="dat" class="java.util.Date" />
-
-
+	<bean id="tbean"
+		class="com.excel.core_01.iocContainer._07BeanPropertyTypes.TestBean">
+		<property name="msg">
+			<value>Hello</value>
+		</property>
+		<property name="dt">
+			<ref bean="dat" />
+		</property>
+	</bean>
 
 	<bean id="db"
 		class="com.excel.core_01.iocContainer._07BeanPropertyTypes.DemoImple">
-		<property name="salary">
-			<value>5000</value>
-		</property>
+		<property name="salary" value="5000"/>
 
 		<property name="tb">
 			<ref bean="tbean" />
@@ -51,8 +56,8 @@
 
 		<property name="emails">
 			<set>
-				<value>kanakavaraprasad@gmail.com</value>
-				<value>s.varaprasad@yahoo.co.in</value>
+				<value>jayram.excel@gmail.com</value>
+				<value>jayram.rout@yahoo.com</value>
 			</set>
 		</property>
 
@@ -75,9 +80,9 @@
 					<key>
 						<ref bean="dat" />
 					</key>
-
 					<ref bean="tbean" />
 				</entry>
+				
 			</map>
 		</property>
 
@@ -104,13 +109,4 @@
 		</property>
 	</bean>
 
-	<bean id="tbean"
-		class="com.excel.core_01.iocContainer._07BeanPropertyTypes.TestBean">
-		<property name="msg">
-			<value>Hello</value>
-		</property>
-		<property name="dt">
-			<ref bean="dat" />
-		</property>
-	</bean>
 </beans>

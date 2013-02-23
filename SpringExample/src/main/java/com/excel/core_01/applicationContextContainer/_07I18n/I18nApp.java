@@ -14,6 +14,7 @@ public class I18nApp {
 //		ResourceBundle r = ResourceBundle.getBundle("com/excel/core_01/applicationContextContainer/_07I18n/app");
 
 		Locale locale = new Locale("en", "gb");
+//		Locale locale = new Locale("en");
 		ResourceBundle r = ResourceBundle.getBundle("com/excel/core_01/applicationContextContainer/_07I18n/app",locale);
 
 		JFrame jf = new JFrame();

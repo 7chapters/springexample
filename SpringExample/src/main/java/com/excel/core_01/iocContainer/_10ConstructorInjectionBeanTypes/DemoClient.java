@@ -18,5 +18,4 @@ public class DemoClient {
 		
 		System.out.print(d1.sayHello());		
 	}
-
 }

@@ -6,14 +6,14 @@
 	<bean id="t1"
 		class="com.excel.core_01.applicationContextContainer._17Wiring._2AutowireByType.TestBean">
 		<property name="msg">
-			<value>Gmg. friends... Have a Great Day</value>
+			<value>Gmg. friends... Have a Great Day Jayram</value>
 		</property>
 	</bean>
 	
 	<!-- <bean id = "t2" class = "com.excel.core_01.applicationContextContainer._17Wiring._2AutowireByType.TestBean"> 
 		<property name="msg"> <value>Gmg.... friends Njoy this Beautiful life :)</value> 
-		</property> </bean>
-	 -->
+		</property> </bean> -->
+	 
 	<bean id="db"
 		class="com.excel.core_01.applicationContextContainer._17Wiring._2AutowireByType.DemoBean"
 		autowire="byType" />

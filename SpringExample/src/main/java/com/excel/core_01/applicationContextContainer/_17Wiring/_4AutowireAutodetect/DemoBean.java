@@ -23,9 +23,8 @@ public class DemoBean implements Demo{
 		this.tb = tb;
 	}
 
-	public String hi()
-	{
-		return "Hi..."+tb.toString();
+	public String hi() {
+		return "Hi..."+tb;
 	}
 
 }

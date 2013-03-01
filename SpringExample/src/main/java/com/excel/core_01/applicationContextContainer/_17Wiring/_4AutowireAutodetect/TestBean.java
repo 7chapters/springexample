@@ -12,12 +12,6 @@ public class TestBean {
 
 	@Override
 	public String toString() {
-		
 		return msg;
 	}
-	
-	
-
-	
-
 }

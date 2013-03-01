@@ -4,7 +4,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 
-  <bean  id="in" class="com.excel.core_01.applicationContextContainer._10InterfaceInit.Init">  <!-- init-method = "init" -->
+  <bean  id="in" class="com.excel.core_01.applicationContextContainer._10InterfaceInit.Init" > <!-- init-method = "init" -->
 	<property name = "p1" value = "10"/>	
   </bean>
 </beans>

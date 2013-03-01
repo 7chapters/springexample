@@ -6,7 +6,7 @@
 	<bean id="tb"
 		class="com.excel.core_01.applicationContextContainer._17Wiring._1AutowireByName.TestBean"> <!-- Explicit wiring -->
 		<property name="msg">
-			<value>Very GM</value>
+			<value>Very GM Auto Wire By Name</value>
 		</property>
 	</bean>
 	<!-- Note: When we go for explicit wiring through setter injection then 
@@ -17,14 +17,14 @@
 	<bean id="tb1"
 		class="com.excel.core_01.applicationContextContainer._17Wiring._1AutowireByName.TestBean">
 		<property name="msg">
-			<value>Good noon friends.... :)</value>
+			<value>Good noon friends By Constructor</value>
 		</property>
 	</bean>
 	
 	<bean id="db"
 		class="com.excel.core_01.applicationContextContainer._17Wiring._1AutowireByName.DemoBean"
 		autowire="byName">
-		<!-- property name="tb"> <ref bean = "tb"/> </property-->
+		<!-- <property name="tb"> <ref bean = "tb1"/> </property> -->
 		<constructor-arg>
 			<ref bean="tb1" />
 		</constructor-arg>

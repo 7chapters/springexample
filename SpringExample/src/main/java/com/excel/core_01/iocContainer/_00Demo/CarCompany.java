@@ -1,6 +1,6 @@
 package com.excel.core_01.iocContainer._00Demo;
 
-public class Wipro implements Company {
+public class CarCompany implements Company {
 
 	@Override
 	public int strength() {
@@ -9,7 +9,7 @@ public class Wipro implements Company {
 
 	@Override
 	public String logoName() {
-		return "We are Wipro";
+		return "We are CarCompany";
 	}
 
 }

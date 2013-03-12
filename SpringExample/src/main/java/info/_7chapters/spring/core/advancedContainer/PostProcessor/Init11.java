@@ -1,4 +1,4 @@
-package com.excel.core_01.applicationContextContainer.PostProcessor;
+package info._7chapters.spring.core.advancedContainer.PostProcessor;
 public class Init11{
 
 	int p1;

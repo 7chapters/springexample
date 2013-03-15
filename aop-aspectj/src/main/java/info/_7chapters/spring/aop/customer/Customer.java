@@ -1,6 +1,6 @@
-package com.mkyong.customer.bo;
+package info._7chapters.spring.aop.customer;
 
-public interface CustomerBo {
+public interface Customer {
 
 	void addCustomer();
 	

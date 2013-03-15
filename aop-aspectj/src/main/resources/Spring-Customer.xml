@@ -4,45 +4,47 @@
 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
 	http://www.springframework.org/schema/aop 
 	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+<!--  
+	only <aop:config> has to be commented if you want to use aspectj annotattion and enable aop:aspectj 
+-->
+	<aop:aspectj-autoproxy />
 
-	<!-- <aop:aspectj-autoproxy /> -->
-
-	<bean id="customerBo" class="com.mkyong.customer.bo.impl.CustomerBoImpl"/>
+	<bean id="customerBo" class="info._7chapters.spring.aop.customer.CustomerImpl"/>
 
 	<!-- Aspect -->
-	<bean id="logAspect" class="com.mkyong.aspect.LoggingAspect" />
+	<bean id="logAspect" class="info._7chapters.spring.aop.aspect.LoggingAspect" />
 
-	<aop:config>
+	<!-- <aop:config>
 		<aop:aspect id="aspectLoggging" ref="logAspect" >
 
-			<!--@Before-->
+			@Before
 			<aop:pointcut id="pointCutBefore"
-				expression="execution(* com.mkyong.customer.bo.CustomerBo.addCustomer(..))" />
+				expression="execution(* info._7chapters.spring.aop.customer.Customer.addCustomer(..))" />
 			<aop:before method="logBefore" pointcut-ref="pointCutBefore" />
 			
-			<!--@After-->
+			@After
 			<aop:pointcut id="pointCutAfter"
-				expression="execution(* com.mkyong.customer.bo.CustomerBo.addCustomer(..))" />
+				expression="execution(* info._7chapters.spring.aop.customer.Customer.addCustomer(..))" />
 			<aop:after method="logAfter" pointcut-ref="pointCutAfter" />
 			
 			
-			<!--@AfterReturning-->
+			@AfterReturning
 			<aop:pointcut id="pointCutAfterReturning"
-				expression="execution(* com.mkyong.customer.bo.CustomerBo.addCustomerReturnValue(..))" />
+				expression="execution(* info._7chapters.spring.aop.customer.Customer.addCustomerReturnValue(..))" />
 			<aop:after-returning method="logAfterReturning" returning="result" 
 				pointcut-ref="pointCutAfterReturning" />
 			
-			<!--@AfterThrowing-->
+			@AfterThrowing
 			<aop:pointcut id="pointCutAfterThrowing"
-				expression="execution(* com.mkyong.customer.bo.CustomerBo.addCustomerThrowException(..))" />
+				expression="execution(* info._7chapters.spring.aop.customer.Customer.addCustomerThrowException(..))" />
 			<aop:after-throwing method="logAfterThrowing" throwing="error" 
 				pointcut-ref="pointCutAfterThrowing"  />
 			
-			<!--@Around-->
+			@Around
 			<aop:pointcut id="pointCutAround"
-				expression="execution(* com.mkyong.customer.bo.CustomerBo.addCustomerAround(..))" />
+				expression="execution(* info._7chapters.spring.aop.customer.Customer.addCustomerAround(..))" />
 			<aop:around method="logAround" pointcut-ref="pointCutAround"  />
 		</aop:aspect>
 
-	</aop:config>
+	</aop:config> -->
 </beans>

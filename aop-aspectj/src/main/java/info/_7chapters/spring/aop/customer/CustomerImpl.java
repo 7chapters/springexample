@@ -1,8 +1,7 @@
-package com.mkyong.customer.bo.impl;
+package info._7chapters.spring.aop.customer;
 
-import com.mkyong.customer.bo.CustomerBo;
 
-public class CustomerBoImpl implements CustomerBo {
+public class CustomerImpl implements Customer {
 
 	public void addCustomer(){
 		System.out.println("addCustomer() is running ");

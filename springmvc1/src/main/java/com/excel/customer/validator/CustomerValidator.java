@@ -8,14 +8,12 @@ import com.excel.customer.model.Customer;
 
 public class CustomerValidator implements Validator{
 
-	@Override
 	public boolean supports(Class clazz) {
 		//just validate the Customer instances
 		return Customer.class.isAssignableFrom(clazz);
 
 	}
 
-	@Override
 	public void validate(Object target, Errors errors) {
 		
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "userName",

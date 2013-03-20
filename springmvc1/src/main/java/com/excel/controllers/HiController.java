@@ -18,7 +18,6 @@ public class HiController implements Controller{
 		this.message = message;
 	}
 
-	@Override
 	public ModelAndView handleRequest(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		return new ModelAndView("helloworld", "message",message);

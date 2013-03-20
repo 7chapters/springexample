@@ -10,9 +10,15 @@
     <h1>Hello World </h1>
     <ul>
       <li><a href="hi.htm">Hi World</a></li>
-    <!--   <li><a href="helloworld.htm">Hello World</a></li>
       <li><a href="customer/add.htm">Add MAC</a></li>
-      <li><a href="customer/delete.htm">Delete MAC</a></li> -->
+      <li><a href="customer/delete.htm">Delete MAC</a></li>
+      
+      <!--Annotation based Below-->
+    	<li><a href="helloworld.htm">Hello World</a></li>
+    	<li><a href="byeworld.htm">Bye World</a></li>
+    	<li><a href="welcome.htm">Welcome</a></li>
+    	<li><a href="welcome/goodbyee.htm">Good Bye World</a></li>
+    	
     </ul>
   </body>
 </html>

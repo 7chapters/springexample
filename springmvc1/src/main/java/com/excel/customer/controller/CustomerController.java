@@ -21,13 +21,6 @@ public class CustomerController extends SimpleFormController {
 		setCommandName("customerForm");
 	}
 	
-	
-	@Override
-	protected ModelAndView handleRequestInternal(HttpServletRequest request,
-			HttpServletResponse response) throws Exception {
-		return new ModelAndView();
-	}
-	
 	@Override
 	protected ModelAndView onSubmit(HttpServletRequest request,
 			HttpServletResponse response, Object command, BindException errors)
@@ -35,8 +28,7 @@ public class CustomerController extends SimpleFormController {
 		System.out.println("CustomerController.onSubmit()");
 		Customer customer = (Customer)command;
 		System.out.println(customer);
-		//return new ModelAndView("CustomerSuccess","customer",customer);
-		return new ModelAndView(getSuccessView(),"customer",customer);
+		return new ModelAndView("CustomerSuccess","customer",customer);
 	}
 	
 	@Override

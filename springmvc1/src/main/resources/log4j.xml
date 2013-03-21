@@ -17,14 +17,13 @@
         </layout>
     </appender>
     
-	<logger name="com.excel">
+	<logger name="com.excel.controllers">
         <level value="DEBUG"/>
     </logger>
     
     <root>
         <priority value ="DEBUG" />
         <appender-ref ref="Console"/>
-        <appender-ref ref="LogFile"/>
      </root>
   
  </log4j:configuration>

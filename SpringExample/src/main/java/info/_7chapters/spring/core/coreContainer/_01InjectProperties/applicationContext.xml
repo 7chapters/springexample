@@ -6,6 +6,6 @@
 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
       <bean  id="company"   class="info._7chapters.spring.core.coreContainer._01InjectProperties.BikeCompany">
-      	<property name="tyreType">MRF Tyres</property>
+      	<property name="tyreType" value="MRF Tyres"/>
       </bean>
 </beans>

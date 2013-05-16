@@ -15,7 +15,7 @@ public class Client {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("SpringHibernate.xml");
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("com/excel/orm_03/_02SpringHibernateApproach1/SpringHibernate.xml");
 		
 		BeanFactory factory = (BeanFactory)ctx;
 		

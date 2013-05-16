@@ -10,49 +10,26 @@ class StudentClient
 	public static void main(String[] args) 
 	{
 		//activate hibernate software
-
 		Configuration cfg = new Configuration();
-
-
 		//read configuration file
-
-		cfg  = cfg.configure();
-
-//		cfg  = cfg.configure("sathya.xml");
-
-
-
+		cfg  = cfg.configure("com/excel/orm_03/_01PureHibernateExample/hibernate.cfg.xml");
 		// create SessionFactory 
-
 		SessionFactory factory = cfg.buildSessionFactory();
-
 		//getting session from session factory
-
 		Session ses = factory.openSession();
-
 		//creation of StudentBean class object
-
 		StudentBean st1 = new StudentBean();
 
-		st1.setSid(564);
+		st1.setSid(5);
 		st1.setSname("Mani Vannan :)");
-		st1.setTot_m(100.0f);
-
-
+//		st1.setTot_m(20.2f);
 
 		//creation of Transaction object as we are modifying database table
-
 		Transaction tx = ses.beginTransaction();
-
 		ses.save(st1);
-
 		tx.commit();
-
 		System.out.println("Record Inserted!");
-
 		ses.close();
-
 		factory.close();
-
 	}
 }

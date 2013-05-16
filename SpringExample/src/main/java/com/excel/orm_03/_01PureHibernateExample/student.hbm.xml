@@ -4,16 +4,9 @@
 	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-
-	<class name="StudentBean" table="student">
-		
+	<class name="com.excel.orm_03._01PureHibernateExample.StudentBean" table="student">
 		<id name="sid" column = "sid"/>
-
-		<property name="sname" 
-				column="sname"/>
-		
+		<property name="sname" column="sname"/>
 		<property name="tot_m" column = "tot_m"/>
-		
 	</class>
-	
 </hibernate-mapping>

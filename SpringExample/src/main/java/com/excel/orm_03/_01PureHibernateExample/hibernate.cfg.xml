@@ -5,17 +5,11 @@
 <hibernate-configuration>
 	<session-factory>
 		<property name = "hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
-
-		<property name = "hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:satya</property>
-
-		<property name = "hibernate.connection.username">scott</property>
-
-
-		<property name = "hibernate.connection.password">tiger</property>
-
+		<property name = "hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:XE</property>
+		<property name = "hibernate.connection.username">TRAINING</property>
+		<property name = "hibernate.connection.password">training</property>
 		<property name = "hibernate.dialect">org.hibernate.dialect.Oracle9Dialect</property>
-
 		<property name="show_sql">true</property>
-		<mapping resource="student.hbm.xml"/>
+		<mapping resource="com/excel/orm_03/_01PureHibernateExample/student.hbm.xml"/>
 	</session-factory>
 </hibernate-configuration>

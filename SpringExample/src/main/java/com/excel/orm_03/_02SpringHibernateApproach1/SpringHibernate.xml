@@ -10,37 +10,36 @@
 		</property>
 		
 		<property name="url">
-		<value>jdbc:oracle:thin:@localhost:1521:satya</value>
+		<value>jdbc:oracle:thin:@localhost:1521:XE</value>
 		</property>
 		
 		<property name="username">
-			<value>scott</value>
+			<value>TRAINING</value>
 		</property>
 		
 		<property name="password">
-		<value>tiger</value>
+		<value>training</value>
 		</property>
 	</bean>
 	
-	<bean id = "mySessionFactory" class = "org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+	<bean id = "mySessionFactory" class = "org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref = "ds"/>
 		
 		<property name="mappingResources">
 			<list>
-				<value>User.hbm.xml</value>
+				<value>com/excel/orm_03/_02SpringHibernateApproach1/User.hbm.xml</value>
 			</list>
 		</property>
 	
 	<property name="hibernateProperties">
 		<props>
 			<prop key="hibernate.dialect">org.hibernate.dialect.Oracle9Dialect</prop>
-			
-		<prop key="show_sql">true</prop>
+			<prop key="show_sql">true</prop>
 		</props>
 	</property>
 	</bean>
 	
-	<bean id = "d1" class = "DemoImpl">
+	<bean id = "d1" class = "com.excel.orm_03._02SpringHibernateApproach1.DemoImpl">
 		<property name="factory" ref = "mySessionFactory" />
 	</bean>
 </beans>

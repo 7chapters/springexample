@@ -32,8 +32,8 @@ public class JdbcEmployeeDAO extends JdbcDaoSupport implements EmployeeDAO
 
 	public void insertBatch(final List<Employee> employees){
 
-		String sql = "INSERT INTO EMPLOYEE_BK " +
-				"(EMPLOYEE_ID, FIRST_NAME, JOB_ID) VALUES (?, ?, ?)";
+		String sql = "INSERT INTO EMPLOYEE_bk" +
+				"(empid, fname, jobid) VALUES (?, ?, ?)";
 
 		getJdbcTemplate().batchUpdate(sql, new BatchPreparedStatementSetter() {
 			@Override
